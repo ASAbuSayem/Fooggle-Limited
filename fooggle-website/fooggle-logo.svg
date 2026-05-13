@@ -1,0 +1,104 @@
+<svg width="560" height="180" viewBox="0 0 560 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gMark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c3fff"/>
+      <stop offset="100%" stop-color="#00c8e0"/>
+    </linearGradient>
+    <linearGradient id="gF" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5a2eff"/>
+      <stop offset="100%" stop-color="#1a0a6e"/>
+    </linearGradient>
+    <linearGradient id="gDiv" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c4dff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#5580ff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="gNodeA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9c6dff"/>
+      <stop offset="100%" stop-color="#6c3fff"/>
+    </radialGradient>
+    <radialGradient id="gNodeB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e8ff"/>
+      <stop offset="100%" stop-color="#0090b0"/>
+    </radialGradient>
+    <radialGradient id="gNodeC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#60aaff"/>
+      <stop offset="100%" stop-color="#1a55cc"/>
+    </radialGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- WHITE BACKGROUND -->
+  <rect width="560" height="180" fill="white"/>
+
+  <!-- Outer orbit ring (dashed) -->
+  <circle cx="68" cy="80" r="56" fill="none" stroke="url(#gMark)" stroke-width="1" stroke-dasharray="5 4" opacity="0.3"/>
+  <!-- Main orbit ring -->
+  <circle cx="68" cy="80" r="46" fill="none" stroke="url(#gMark)" stroke-width="2" opacity="0.85"/>
+  <!-- Inner glow disk -->
+  <circle cx="68" cy="80" r="38" fill="rgba(108,63,255,0.05)"/>
+
+  <!-- F LETTERFORM -->
+  <rect x="44" y="46" width="14" height="68" rx="4" fill="url(#gF)"/>
+  <rect x="44" y="46" width="44" height="14" rx="4" fill="url(#gF)"/>
+  <rect x="44" y="78" width="33" height="14" rx="4" fill="url(#gF)"/>
+
+  <!-- NEURAL NODE A — top -->
+  <circle cx="68" cy="34" r="13" fill="rgba(108,63,255,0.15)"/>
+  <circle cx="68" cy="34" r="8" fill="url(#gNodeA)" filter="url(#softGlow)"/>
+  <circle cx="65" cy="31" r="2.5" fill="rgba(255,255,255,0.6)"/>
+
+  <!-- NEURAL NODE B — bottom-right -->
+  <circle cx="108" cy="103" r="13" fill="rgba(0,200,220,0.12)"/>
+  <circle cx="108" cy="103" r="8" fill="url(#gNodeB)" filter="url(#softGlow)"/>
+  <circle cx="105" cy="100" r="2.5" fill="rgba(255,255,255,0.6)"/>
+
+  <!-- NEURAL NODE C — bottom-left -->
+  <circle cx="28" cy="103" r="13" fill="rgba(80,140,255,0.12)"/>
+  <circle cx="28" cy="103" r="8" fill="url(#gNodeC)" filter="url(#softGlow)"/>
+  <circle cx="25" cy="100" r="2.5" fill="rgba(255,255,255,0.6)"/>
+
+  <!-- Neural connection wires -->
+  <line x1="68" y1="34" x2="108" y2="103" stroke="rgba(108,63,255,0.18)" stroke-width="1" stroke-dasharray="3 4"/>
+  <line x1="108" y1="103" x2="28" y2="103" stroke="rgba(0,200,220,0.15)" stroke-width="1" stroke-dasharray="3 4"/>
+  <line x1="28" y1="103" x2="68" y2="34" stroke="rgba(80,140,255,0.15)" stroke-width="1" stroke-dasharray="3 4"/>
+
+  <!-- VERTICAL DIVIDER -->
+  <line x1="148" y1="30" x2="148" y2="130" stroke="url(#gDiv)" stroke-width="1.5"/>
+
+  <!-- WORDMARK -->
+  <text x="172" y="98"
+        font-family="'Times New Roman', Times, serif"
+        font-size="60"
+        font-weight="bold"
+        font-style="italic"
+        letter-spacing="-1"
+        fill="#120830">Fooggle</text>
+
+  <!-- Accent underline -->
+  <rect x="172" y="108" width="270" height="2.5" rx="1.5" fill="url(#gMark)" opacity="0.5"/>
+
+  <!-- Tagline line 1 -->
+  <text x="174" y="122"
+        font-family="'Times New Roman', Times, serif"
+        font-size="12"
+        font-weight="400"
+        letter-spacing="4"
+        fill="#9090b8">AI  AUTOMATION  AGENCY</text>
+
+  <!-- Divider dots between lines -->
+  <circle cx="278" cy="130" r="1.5" fill="rgba(108,63,255,0.4)"/>
+  <circle cx="286" cy="130" r="1.5" fill="rgba(0,200,220,0.4)"/>
+  <circle cx="294" cy="130" r="1.5" fill="rgba(80,140,255,0.4)"/>
+
+  <!-- Tagline line 2 -->
+  <text x="174" y="144"
+        font-family="'Times New Roman', Times, serif"
+        font-size="12"
+        font-weight="400"
+        letter-spacing="4"
+        fill="#9090b8">SOFTWARE  DEVELOPMENT</text>
+</svg>

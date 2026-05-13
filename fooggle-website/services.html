@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Services — Fooggle</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="cursor" id="cur"></div><div class="cursor-ring" id="curRing"></div><div class="scroll-progress" id="sp"></div>
+<div class="mobile-nav" id="mNav">
+  <button class="mobile-close" onclick="closeMNav()">✕</button>
+  <a href="index.html" onclick="closeMNav()">Home</a><a href="services.html" onclick="closeMNav()">Services</a><a href="pricing.html" onclick="closeMNav()">Pricing</a><a href="leadership.html" onclick="closeMNav()">Leadership</a><a href="contact.html" onclick="closeMNav()">Contact</a>
+</div>
+<nav id="nav">
+  <a href="index.html"><img src="assets/logo.svg" alt="Fooggle" style="height:52px"/></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="services.html" class="active">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="leadership.html">Leadership</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+    <a href="contact.html" class="nav-cta">Get Started →</a>
+    <button class="hamburger" onclick="openMNav()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="page-hero" style="background:var(--bg)">
+  <div class="blob b1" style="opacity:.5"></div>
+  <div class="container" style="position:relative;z-index:2;text-align:center">
+    <div class="slabel" style="justify-content:center">What We Do</div>
+    <h1 class="page-hero-title">Our Services</h1>
+    <p class="page-hero-sub">From AI automation to full-stack software — we build intelligent systems that scale your business.</p>
+  </div>
+</div>
+<!-- AI AUTOMATION -->
+<section class="sp">
+  <div class="container">
+    <div class="reveal">
+      <div class="slabel">AI Automation</div>
+      <h2 class="stitle">Intelligent Automation<br/>for <span class="gt">Every Workflow</span></h2>
+      <p class="ssub">Replace manual processes with self-learning AI systems that run 24/7 without human oversight.</p>
+    </div>
+    <div class="sv-grid reveal" style="margin-top:48px">
+      <div class="sv-card"><div class="sv-icon">🤖</div><div class="sv-title">AI Workflow Automation</div><div class="sv-desc">Replace repetitive tasks with intelligent, self-learning workflows that operate around the clock.</div><span class="sv-tag">Core Service</span></div>
+      <div class="sv-card"><div class="sv-icon">💬</div><div class="sv-title">Conversational AI & Chatbots</div><div class="sv-desc">Deploy sophisticated AI assistants that understand context, handle queries, and convert visitors.</div><span class="sv-tag">High Demand</span></div>
+      <div class="sv-card"><div class="sv-icon">📊</div><div class="sv-title">Predictive Analytics</div><div class="sv-desc">Turn raw data into actionable foresight — forecast trends and make data-driven decisions automatically.</div><span class="sv-tag">Data Driven</span></div>
+      <div class="sv-card"><div class="sv-icon">🔗</div><div class="sv-title">System Integration & APIs</div><div class="sv-desc">Connect CRM, ERP, and third-party services into one intelligent, unified AI backbone.</div><span class="sv-tag">Integration</span></div>
+      <div class="sv-card"><div class="sv-icon">🧠</div><div class="sv-title">Custom AI Model Development</div><div class="sv-desc">Build proprietary ML models fine-tuned on your business data for unique competitive advantages.</div><span class="sv-tag">Advanced</span></div>
+      <div class="sv-card"><div class="sv-icon">🛡️</div><div class="sv-title">AI Governance & Compliance</div><div class="sv-desc">Ensure your AI systems are ethical, auditable, and compliant with GDPR, HIPAA, and global AI regulations.</div><span class="sv-tag">Enterprise</span></div>
+    </div>
+  </div>
+</section>
+<!-- SOFTWARE DEVELOPMENT -->
+<section class="sp section-bg">
+  <div class="container">
+    <div class="reveal">
+      <div class="slabel">Software Development</div>
+      <h2 class="stitle">Custom Software That<br/><span class="gt">Works for You</span></h2>
+      <p class="ssub">We design and build high-performance web applications, e-commerce platforms, and enterprise software from scratch.</p>
+    </div>
+    <div class="sv-grid reveal" style="margin-top:48px">
+      <div class="sv-card"><div class="sv-icon">🌐</div><div class="sv-title">Business Website Development</div><div class="sv-desc">Professional, fast, and conversion-optimized websites that represent your brand and generate leads. Starting from ৳30,000.</div><span class="sv-tag">Starting ৳30K</span></div>
+      <div class="sv-card"><div class="sv-icon">🛒</div><div class="sv-title">E-Commerce Platforms</div><div class="sv-desc">Full-featured online stores with payment integration, inventory management, and AI-powered product recommendations.</div><span class="sv-tag">E-Commerce</span></div>
+      <div class="sv-card"><div class="sv-icon">⚙️</div><div class="sv-title">Custom Web Applications</div><div class="sv-desc">Tailor-made SaaS platforms, dashboards, and enterprise portals built with modern tech stacks.</div><span class="sv-tag">Full-Stack</span></div>
+      <div class="sv-card"><div class="sv-icon">🔌</div><div class="sv-title">API Development & Integration</div><div class="sv-desc">RESTful and GraphQL APIs that connect your systems and enable seamless data flow across platforms.</div><span class="sv-tag">Backend</span></div>
+      <div class="sv-card"><div class="sv-icon">🗄️</div><div class="sv-title">Database Architecture</div><div class="sv-desc">Scalable database design and optimization for high-performance applications handling millions of records.</div><span class="sv-tag">Database</span></div>
+      <div class="sv-card"><div class="sv-icon">🔒</div><div class="sv-title">Security & Performance</div><div class="sv-desc">End-to-end security audits, performance optimization, and hardening to keep your software safe and fast.</div><span class="sv-tag">Security</span></div>
+    </div>
+  </div>
+</section>
+<!-- APP DEVELOPMENT -->
+<section class="sp">
+  <div class="container">
+    <div class="reveal">
+      <div class="slabel">App Development</div>
+      <h2 class="stitle">Mobile Apps That<br/><span class="gt2">Users Love</span></h2>
+      <p class="ssub">Native and cross-platform mobile applications with stunning UX, AI features, and rock-solid performance.</p>
+    </div>
+    <div class="sv-grid reveal" style="margin-top:48px">
+      <div class="sv-card"><div class="sv-icon">🍎</div><div class="sv-title">iOS App Development</div><div class="sv-desc">Native Swift apps for iPhone and iPad with App Store-ready polish and seamless Apple ecosystem integration.</div><span class="sv-tag">iOS</span></div>
+      <div class="sv-card"><div class="sv-icon">🤖</div><div class="sv-title">Android App Development</div><div class="sv-desc">High-performance Kotlin/Java Android apps with Material Design, Google Play publishing, and full backend integration.</div><span class="sv-tag">Android</span></div>
+      <div class="sv-card"><div class="sv-icon">📱</div><div class="sv-title">Cross-Platform (Flutter/React Native)</div><div class="sv-desc">One codebase, two platforms. Deploy to iOS and Android simultaneously with near-native performance and beautiful UI.</div><span class="sv-tag">Cross-Platform</span></div>
+      <div class="sv-card"><div class="sv-icon">🧩</div><div class="sv-title">AI-Powered Mobile Features</div><div class="sv-desc">Integrate face recognition, NLP, recommendation engines, and real-time AI into your mobile application.</div><span class="sv-tag">AI Mobile</span></div>
+      <div class="sv-card"><div class="sv-icon">☁️</div><div class="sv-title">Backend & Cloud Infrastructure</div><div class="sv-desc">Scalable FastAPI, Node.js, or Firebase backends with AWS/GCP hosting, auto-scaling, and 99.9% uptime.</div><span class="sv-tag">Backend</span></div>
+      <div class="sv-card"><div class="sv-icon">🔄</div><div class="sv-title">App Maintenance & Updates</div><div class="sv-desc">Ongoing app maintenance, OS update support, feature additions, and performance monitoring post-launch.</div><span class="sv-tag">Support</span></div>
+    </div>
+  </div>
+</section>
+<!-- CTA -->
+<section class="sp section-bg">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <h2 class="cta-title">Ready to Build<br/><span class="gt">Something Great?</span></h2>
+      <p class="cta-sub">Tell us your idea and we'll turn it into reality. Free consultation — no strings attached.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a href="contact.html" class="btn-p">Start a Project →</a>
+        <a href="pricing.html" class="btn-g">View Pricing</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="ft-grid2">
+      <div class="fb"><a href="index.html"><img src="assets/logo.svg" alt="Fooggle" style="height:48px"/></a><p>Building the AI backbone for tomorrow's businesses.</p><div class="soc"><a class="sb" href="https://wa.me/8801XXXXXXXXX" target="_blank">💬</a><a class="sb" href="https://youtube.com/@fooggle" target="_blank">▶</a><a class="sb" href="https://linkedin.com/company/fooggle" target="_blank">in</a><a class="sb" href="https://x.com/fooggle" target="_blank">𝕏</a></div></div>
+      <div class="fc"><h5>Services</h5><ul><li><a href="services.html">AI Automation</a></li><li><a href="services.html">Web Development</a></li><li><a href="services.html">App Development</a></li><li><a href="services.html">ML Models</a></li></ul></div>
+      <div class="fc"><h5>Company</h5><ul><li><a href="leadership.html">About Us</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="fc"><h5>Legal</h5><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+    </div>
+    <div class="ft-bot"><p>© 2025 Fooggle Limited. All rights reserved.</p><p>Chairman <a href="leadership.html">Sayem Chowdhury</a> &amp; CEO <a href="leadership.html">Redwan Sharafat Kabir</a></p></div>
+  </div>
+</footer>
+<a href="https://wa.me/8801XXXXXXXXX" class="wa-float" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<script src="js/main.js"></script>
+</body>
+</html>
