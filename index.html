@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Fooggle — AI Automation & Software Development</title>
+<meta name="description" content="Fooggle builds intelligent AI automation systems and custom software that scale your business."/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="curRing"></div>
+<div class="scroll-progress" id="sp"></div>
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mNav">
+  <button class="mobile-close" onclick="closeMNav()">✕</button>
+  <a href="index.html" onclick="closeMNav()">Home</a>
+  <a href="services.html" onclick="closeMNav()">Services</a>
+  <a href="pricing.html" onclick="closeMNav()">Pricing</a>
+  <a href="leadership.html" onclick="closeMNav()">Leadership</a>
+  <a href="contact.html" onclick="closeMNav()">Contact</a>
+</div>
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html"><img src="assets/logo.svg" alt="Fooggle" class="nav-logo" style="height:52px"/></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="leadership.html">Leadership</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+    <a href="contact.html" class="nav-cta">Get Started →</a>
+    <button class="hamburger" onclick="openMNav()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<!-- HERO -->
+<section id="hero">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="hero-robot-wrap">
+    <svg width="210" height="290" viewBox="0 0 220 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="bG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7c4dff"/><stop offset="50%" stop-color="#4a2fa0"/><stop offset="100%" stop-color="#00b8d4"/></linearGradient>
+        <linearGradient id="hG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#9c6dff"/><stop offset="100%" stop-color="#00e5ff"/></linearGradient>
+        <linearGradient id="eG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00e5ff"/><stop offset="100%" stop-color="#4ade80"/></linearGradient>
+        <linearGradient id="cG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(124,77,255,.4)"/><stop offset="100%" stop-color="rgba(0,229,255,.15)"/></linearGradient>
+        <filter id="rg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <clipPath id="ec1"><rect x="68" y="78" width="28" height="22" rx="4"/></clipPath>
+        <clipPath id="ec2"><rect x="124" y="78" width="28" height="22" rx="4"/></clipPath>
+      </defs>
+      <ellipse cx="110" cy="295" rx="55" ry="6" fill="rgba(124,77,255,.15)" class="body-glow"/>
+      <line x1="110" y1="30" x2="110" y2="12" stroke="url(#hG)" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="110" cy="8" r="9" fill="rgba(0,229,255,.15)" class="ant-dot"/>
+      <circle cx="110" cy="8" r="5" fill="#00e5ff" class="ant-dot" filter="url(#rg)"/>
+      <rect x="62" y="30" width="96" height="76" rx="18" fill="url(#hG)" opacity=".95"/>
+      <rect x="65" y="33" width="90" height="70" rx="16" fill="rgba(255,255,255,.06)"/>
+      <rect x="70" y="36" width="38" height="4" rx="2" fill="rgba(255,255,255,.25)"/>
+      <rect x="68" y="78" width="28" height="22" rx="5" fill="rgba(0,0,0,.5)"/>
+      <rect x="124" y="78" width="28" height="22" rx="5" fill="rgba(0,0,0,.5)"/>
+      <g clip-path="url(#ec1)"><rect x="70" y="80" width="24" height="18" rx="3" fill="url(#eG)" class="robot-eye"/><rect x="70" y="80" width="24" height="2" rx="1" fill="rgba(255,255,255,.6)" class="scan-line"/></g>
+      <g clip-path="url(#ec2)"><rect x="126" y="80" width="24" height="18" rx="3" fill="url(#eG)" class="robot-eye-r"/></g>
+      <circle cx="82" cy="89" r="4" fill="rgba(0,0,0,.6)"/><circle cx="138" cy="89" r="4" fill="rgba(0,0,0,.6)"/>
+      <circle cx="83" cy="88" r="1.5" fill="white" opacity=".8"/><circle cx="139" cy="88" r="1.5" fill="white" opacity=".8"/>
+      <rect x="85" y="96" width="50" height="5" rx="2.5" fill="rgba(0,0,0,.4)"/>
+      <rect x="87" y="97" width="46" height="3" rx="1.5" fill="url(#eG)" opacity=".7"/>
+      <rect x="96" y="97" width="2" height="3" rx="1" fill="rgba(0,0,0,.4)"/><rect x="106" y="97" width="2" height="3" rx="1" fill="rgba(0,0,0,.4)"/><rect x="116" y="97" width="2" height="3" rx="1" fill="rgba(0,0,0,.4)"/><rect x="126" y="97" width="2" height="3" rx="1" fill="rgba(0,0,0,.4)"/>
+      <rect x="96" y="106" width="28" height="12" rx="4" fill="url(#bG)" opacity=".7"/>
+      <rect x="52" y="118" width="116" height="110" rx="20" fill="url(#bG)"/>
+      <rect x="55" y="121" width="110" height="104" rx="18" fill="rgba(255,255,255,.05)"/>
+      <rect x="60" y="124" width="50" height="5" rx="2.5" fill="rgba(255,255,255,.18)"/>
+      <rect x="70" y="132" width="80" height="60" rx="10" fill="url(#cG)" stroke="rgba(0,229,255,.3)" stroke-width="1"/>
+      <line x1="75" y1="145" x2="145" y2="145" stroke="rgba(0,229,255,.4)" stroke-width="1" stroke-dasharray="4 3" class="circ1"/>
+      <line x1="75" y1="157" x2="145" y2="157" stroke="rgba(124,77,255,.5)" stroke-width="1" stroke-dasharray="6 3" class="circ2"/>
+      <line x1="75" y1="169" x2="145" y2="169" stroke="rgba(0,229,255,.4)" stroke-width="1" stroke-dasharray="4 3" class="circ3"/>
+      <circle cx="85" cy="182" r="4" fill="rgba(0,229,255,.7)" filter="url(#rg)"/>
+      <circle cx="98" cy="182" r="4" fill="rgba(124,77,255,.7)" filter="url(#rg)"/>
+      <circle cx="111" cy="182" r="4" fill="rgba(74,222,128,.7)" filter="url(#rg)"/>
+      <circle cx="124" cy="182" r="4" fill="rgba(255,107,157,.7)" filter="url(#rg)"/>
+      <circle cx="137" cy="182" r="4" fill="rgba(0,229,255,.7)" filter="url(#rg)"/>
+      <circle cx="110" cy="157" r="12" fill="rgba(0,0,0,.4)"/>
+      <circle cx="110" cy="157" r="10" fill="url(#eG)" opacity=".9" filter="url(#rg)" class="ant-dot"/>
+      <circle cx="107" cy="154" r="3" fill="rgba(255,255,255,.5)"/>
+      <g class="robot-arm-l"><rect x="22" y="120" width="30" height="80" rx="14" fill="url(#bG)"/><rect x="25" y="123" width="24" height="74" rx="12" fill="rgba(255,255,255,.05)"/><circle cx="37" cy="175" r="10" fill="rgba(0,229,255,.2)" stroke="rgba(0,229,255,.4)" stroke-width="1.5"/><rect x="24" y="196" width="26" height="18" rx="8" fill="url(#hG)" opacity=".9"/><rect x="27" y="199" width="5" height="12" rx="3" fill="rgba(255,255,255,.3)"/><rect x="35" y="199" width="5" height="12" rx="3" fill="rgba(255,255,255,.3)"/><rect x="43" y="199" width="5" height="12" rx="3" fill="rgba(255,255,255,.3)"/></g>
+      <g class="robot-arm-r"><rect x="168" y="120" width="30" height="80" rx="14" fill="url(#bG)"/><rect x="171" y="123" width="24" height="74" rx="12" fill="rgba(255,255,255,.05)"/><circle cx="183" cy="175" r="10" fill="rgba(124,77,255,.2)" stroke="rgba(124,77,255,.4)" stroke-width="1.5"/><rect x="170" y="196" width="26" height="18" rx="8" fill="url(#hG)" opacity=".9"/><rect x="173" y="199" width="5" height="12" rx="3" fill="rgba(255,255,255,.3)"/><rect x="181" y="199" width="5" height="12" rx="3" fill="rgba(255,255,255,.3)"/><rect x="189" y="199" width="5" height="12" rx="3" fill="rgba(255,255,255,.3)"/></g>
+      <rect x="52" y="218" width="116" height="14" rx="6" fill="rgba(0,0,0,.3)"/>
+      <rect x="95" y="219" width="30" height="12" rx="5" fill="rgba(0,229,255,.15)" stroke="rgba(0,229,255,.3)" stroke-width="1"/>
+      <g class="robot-legs">
+        <rect x="68" y="232" width="34" height="52" rx="12" fill="url(#bG)"/><rect x="71" y="235" width="28" height="46" rx="10" fill="rgba(255,255,255,.05)"/><rect x="64" y="278" width="42" height="14" rx="8" fill="url(#hG)" opacity=".9"/>
+        <rect x="118" y="232" width="34" height="52" rx="12" fill="url(#bG)"/><rect x="121" y="235" width="28" height="46" rx="10" fill="rgba(255,255,255,.05)"/><rect x="114" y="278" width="42" height="14" rx="8" fill="url(#hG)" opacity=".9"/>
+      </g>
+    </svg>
+  </div>
+  <div class="container" style="position:relative;z-index:2">
+    <div class="hero-badge"><span class="badge-dot"></span>Next-Gen AI Automation Agency — Now Live</div>
+    <h1 class="hero-title">Automate Smarter.<br/><span class="gt">Scale Without Limits.</span></h1>
+    <p class="hero-sub">Fooggle builds intelligent AI systems and custom software that replace repetitive workflows, cut costs, and unlock compounding growth for your business.</p>
+    <div class="hero-btns">
+      <a href="contact.html" class="btn-p">Start Automating <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="services.html" class="btn-g"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/></svg>Explore Services</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">200+</div><div class="stat-label">Clients Served</div></div>
+      <div><div class="stat-num">10x</div><div class="stat-label">Productivity Boost</div></div>
+      <div><div class="stat-num">98%</div><div class="stat-label">Client Satisfaction</div></div>
+      <div><div class="stat-num">$4M+</div><div class="stat-label">Value Delivered</div></div>
+    </div>
+  </div>
+</section>
+<!-- MARQUEE -->
+<div class="mq-wrap">
+  <div class="mq-track">
+    <div class="mq-item"><span>⚡</span>AI Workflow Automation</div><div class="mq-item"><span>🤖</span>Machine Learning</div><div class="mq-item"><span>💻</span>Web Development</div><div class="mq-item"><span>📱</span>App Development</div><div class="mq-item"><span>📊</span>Predictive Analytics</div><div class="mq-item"><span>💬</span>Chatbot Systems</div><div class="mq-item"><span>🧠</span>Computer Vision AI</div><div class="mq-item"><span>🚀</span>Hyper-Automation</div>
+    <div class="mq-item"><span>⚡</span>AI Workflow Automation</div><div class="mq-item"><span>🤖</span>Machine Learning</div><div class="mq-item"><span>💻</span>Web Development</div><div class="mq-item"><span>📱</span>App Development</div><div class="mq-item"><span>📊</span>Predictive Analytics</div><div class="mq-item"><span>💬</span>Chatbot Systems</div><div class="mq-item"><span>🧠</span>Computer Vision AI</div><div class="mq-item"><span>🚀</span>Hyper-Automation</div>
+  </div>
+</div>
+<!-- AI AGENT -->
+<section id="ai-agent" class="sp section-bg">
+  <div class="blob" style="width:450px;height:450px;background:rgba(0,229,255,.07);top:-80px;right:-80px;animation:blobFloat 10s ease-in-out infinite"></div>
+  <div class="container">
+    <div class="agent-inner">
+      <div class="reveal">
+        <div class="slabel">Meet Fooggle AI</div>
+        <h2 class="stitle">Your Always-On<br/><span class="gt">Intelligent Agent</span></h2>
+        <p class="agent-desc">Fooggle's AI Agent is a self-learning, multi-task engine that orchestrates your entire automation stack. It doesn't just execute — it <em>thinks</em>, adapts, and improves with every interaction.</p>
+        <p class="agent-desc">From parsing customer queries to managing data pipelines, the Fooggle Agent runs 24/7 so your team never has to.</p>
+        <div class="agent-pills">
+          <span class="pill">🧠 Self-Learning</span><span class="pill">⚡ Real-Time</span><span class="pill">🔗 300+ Integrations</span><span class="pill">🛡️ SOC2 Compliant</span><span class="pill">🌍 Multi-Language</span><span class="pill">📡 Live Monitoring</span>
+        </div>
+      </div>
+      <div class="agent-visual reveal">
+        <div class="orbit-wrap">
+          <div class="a-ring ar1"></div><div class="a-ring ar2"></div><div class="a-ring ar3"></div>
+          <div class="agent-core">🤖</div>
+          <div class="on n1">💬</div><div class="on n2">📊</div><div class="on n3">👁️</div>
+          <div class="on n4">🛡️</div><div class="on n5">⚙️</div><div class="on n6">🔗</div>
+          <div class="dp dp1"></div><div class="dp dp2"></div><div class="dp dp3"></div>
+        </div>
+        <div class="agent-term">
+          <div class="term-hdr"><span class="td" style="background:#ff5f57"></span><span class="td" style="background:#febc2e"></span><span class="td" style="background:#28c840"></span></div>
+          <div class="tl" id="tl0"></div><div class="tl m" id="tl1"></div><div class="tl p" id="tl2"></div><div class="tl" id="tl3"></div>
+          <div class="tl">&gt; <span class="tcursor"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- HOW IT WORKS -->
+<section id="how" class="sp">
+  <div class="container">
+    <div class="how-grid">
+      <div class="reveal">
+        <div class="slabel">The Process</div>
+        <h2 class="stitle">From Idea to<br/><span class="gt2">Automation</span><br/>in Weeks</h2>
+        <div style="margin-top:40px">
+          <div class="how-step"><div class="hs-num">01</div><div><div class="hs-title">Discovery & Audit</div><div class="hs-desc">We analyze your workflows, identify bottlenecks, and map the highest-ROI automation opportunities.</div></div></div>
+          <div class="how-step"><div class="hs-num">02</div><div><div class="hs-title">Design & Architecture</div><div class="hs-desc">Custom AI blueprint tailored to your tech stack, team structure, and business goals.</div></div></div>
+          <div class="how-step"><div class="hs-num">03</div><div><div class="hs-title">Build & Integrate</div><div class="hs-desc">We develop, test, and deploy systems that plug seamlessly into your existing operations.</div></div></div>
+          <div class="how-step"><div class="hs-num">04</div><div><div class="hs-title">Monitor & Scale</div><div class="hs-desc">Continuous monitoring and optimization ensures your AI keeps improving over time.</div></div></div>
+        </div>
+      </div>
+      <div class="how-vis reveal">
+        <div style="position:absolute;inset:0">
+          <div class="vc vcm">
+            <div class="vt"><div class="vds"><span class="vd"></span><span class="vd"></span><span class="vd"></span></div><div class="vlabel">Fooggle Dashboard</div></div>
+            <div class="vchart"><div class="vbar" style="height:40%"></div><div class="vbar" style="height:65%"></div><div class="vbar" style="height:50%"></div><div class="vbar" style="height:85%"></div><div class="vbar" style="height:70%"></div><div class="vbar" style="height:92%"></div><div class="vbar" style="height:60%"></div><div class="vbar" style="height:97%"></div></div>
+            <div class="vfooter"><div class="vavatar"></div><div class="vmeta"><strong>Automation Performance</strong>+340% efficiency this month</div><span class="vbadge">↑ Live</span></div>
+          </div>
+          <div class="vc vcf1"><div class="vmt">Tasks Automated</div><div class="vnum">12,840</div><div class="vnums">↑ +28% this week</div></div>
+          <div class="vc vcf2"><div class="vmt">Active Workflows</div><div class="vlist"><div class="vli">Lead Scoring AI</div><div class="vli">Email Automation</div><div class="vli">Data Pipeline</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TESTIMONIALS -->
+<section class="sp section-bg">
+  <div class="container">
+    <div style="text-align:center" class="reveal">
+      <div class="slabel" style="justify-content:center">Client Stories</div>
+      <h2 class="stitle">Trusted by Teams Who Move Fast</h2>
+    </div>
+    <div class="ts-grid reveal">
+      <div class="ts-card"><div class="ts-stars">★★★★★</div><p class="ts-q">"Fooggle transformed how we handle lead qualification. 3 hours of daily work now runs automatically — and more accurately than we ever did manually."</p><div class="ts-auth"><div class="ts-av">RA</div><div><div class="ts-name">Rashid Ahmed</div><div class="ts-role">Head of Sales, TechFlow BD</div></div></div></div>
+      <div class="ts-card"><div class="ts-stars">★★★★★</div><p class="ts-q">"Fooggle's AI chatbot cut our support tickets by 67% in the first month. ROI was visible within the first week. Mind-blowing team."</p><div class="ts-auth"><div class="ts-av">SF</div><div><div class="ts-name">Sara Farouk</div><div class="ts-role">CTO, NovaTech Cairo</div></div></div></div>
+      <div class="ts-card"><div class="ts-stars">★★★★★</div><p class="ts-q">"The ML model Fooggle built for our inventory prediction cut overstock costs by 40%. They understood our business deeply."</p><div class="ts-auth"><div class="ts-av">MK</div><div><div class="ts-name">Mehedi Khan</div><div class="ts-role">COO, RetailPlex Bangladesh</div></div></div></div>
+    </div>
+  </div>
+</section>
+<!-- CTA -->
+<section class="sp">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div class="slabel" style="justify-content:center;margin-bottom:20px">Get Started Today</div>
+      <h2 class="cta-title">Ready to <span class="gt">Automate</span><br/>Your Business?</h2>
+      <p class="cta-sub">Join 200+ companies already using Fooggle. Free discovery call — no commitments, just clarity.</p>
+      <div class="cta-form">
+        <input type="email" class="cta-in" placeholder="Enter your work email"/>
+        <a href="contact.html" class="btn-p" style="white-space:nowrap">Book Free Call →</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="ft-grid2">
+      <div class="fb">
+        <a href="index.html"><img src="assets/logo.svg" alt="Fooggle" style="height:48px"/></a>
+        <p>Building the AI backbone for tomorrow's businesses. Smarter workflows. Better outcomes. Faster growth.</p>
+        <div class="soc">
+          <a class="sb" href="https://wa.me/8801XXXXXXXXX" target="_blank" title="WhatsApp">💬</a>
+          <a class="sb" href="https://youtube.com/@fooggle" target="_blank" title="YouTube">▶</a>
+          <a class="sb" href="https://linkedin.com/company/fooggle" target="_blank" title="LinkedIn">in</a>
+          <a class="sb" href="https://x.com/fooggle" target="_blank" title="X / Twitter">𝕏</a>
+        </div>
+      </div>
+      <div class="fc"><h5>Services</h5><ul><li><a href="services.html">AI Automation</a></li><li><a href="services.html">Web Development</a></li><li><a href="services.html">App Development</a></li><li><a href="services.html">ML Models</a></li><li><a href="services.html">Data Analytics</a></li></ul></div>
+      <div class="fc"><h5>Company</h5><ul><li><a href="leadership.html">About Us</a></li><li><a href="leadership.html">Leadership</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="fc"><h5>Legal</h5><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Cookie Policy</a></li><li><a href="#">GDPR</a></li></ul></div>
+    </div>
+    <div class="ft-bot">
+      <p>© 2025 Fooggle Limited. All rights reserved.</p>
+      <p>Chairman <a href="leadership.html">Sayem Chowdhury</a> &amp; CEO <a href="leadership.html">Redwan Sharafat Kabir</a></p>
+    </div>
+  </div>
+</footer>
+<!-- WhatsApp Float -->
+<a href="https://wa.me/8801XXXXXXXXX" class="wa-float" target="_blank" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>

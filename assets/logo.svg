@@ -1,0 +1,62 @@
+<svg width="420" height="90" viewBox="0 0 420 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="markG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c3fff"/>
+      <stop offset="100%" stop-color="#00c8e0"/>
+    </linearGradient>
+    <linearGradient id="lineG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c4dff"/>
+      <stop offset="50%" stop-color="#00c8e0"/>
+      <stop offset="100%" stop-color="#ff6b9d"/>
+    </linearGradient>
+    <radialGradient id="nA"><stop offset="0%" stop-color="#9c6dff"/><stop offset="100%" stop-color="#5a20ff"/></radialGradient>
+    <radialGradient id="nB"><stop offset="0%" stop-color="#00e8ff"/><stop offset="100%" stop-color="#0090b0"/></radialGradient>
+    <radialGradient id="nC"><stop offset="0%" stop-color="#60aaff"/><stop offset="100%" stop-color="#1a55cc"/></radialGradient>
+    <filter id="gl"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- ── MARK ── -->
+  <circle cx="40" cy="45" r="34" fill="none" stroke="url(#markG)" stroke-width="1" stroke-dasharray="4 3" opacity="0.35"/>
+  <circle cx="40" cy="45" r="26" fill="none" stroke="url(#markG)" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="40" cy="45" r="18" fill="rgba(108,63,255,0.06)"/>
+  <!-- F letterform -->
+  <rect x="27" y="26" width="9" height="38" rx="2.5" fill="url(#markG)"/>
+  <rect x="27" y="26" width="24" height="9" rx="2.5" fill="url(#markG)"/>
+  <rect x="27" y="44" width="18" height="9" rx="2.5" fill="url(#markG)"/>
+  <!-- Neural nodes -->
+  <circle cx="40" cy="11" r="7" fill="rgba(108,63,255,0.15)"/>
+  <circle cx="40" cy="11" r="4.5" fill="url(#nA)" filter="url(#gl)"/>
+  <circle cx="62" cy="57" r="7" fill="rgba(0,200,220,0.12)"/>
+  <circle cx="62" cy="57" r="4.5" fill="url(#nB)" filter="url(#gl)"/>
+  <circle cx="18" cy="57" r="7" fill="rgba(80,140,255,0.12)"/>
+  <circle cx="18" cy="57" r="4.5" fill="url(#nC)" filter="url(#gl)"/>
+  <!-- Wires -->
+  <line x1="40" y1="11" x2="62" y2="57" stroke="rgba(108,63,255,0.2)" stroke-width="0.8" stroke-dasharray="3 3"/>
+  <line x1="62" y1="57" x2="18" y2="57" stroke="rgba(0,200,220,0.18)" stroke-width="0.8" stroke-dasharray="3 3"/>
+  <line x1="18" y1="57" x2="40" y2="11" stroke="rgba(80,140,255,0.18)" stroke-width="0.8" stroke-dasharray="3 3"/>
+
+  <!-- ── DIVIDER ── -->
+  <line x1="85" y1="18" x2="85" y2="72" stroke="url(#markG)" stroke-width="1" opacity="0.4"/>
+
+  <!-- ── WORDMARK — each letter a different color ── -->
+  <text font-family="'Arial Black','Arial',sans-serif" font-size="48" font-weight="900" font-style="italic">
+    <tspan x="98"  y="62" fill="#6c3fff">F</tspan>
+    <tspan x="128" y="62" fill="#3a8aee">O</tspan>
+    <tspan x="161" y="62" fill="#00aacc">O</tspan>
+    <tspan x="194" y="62" fill="#12b55a">G</tspan>
+    <tspan x="227" y="62" fill="#88bb00">G</tspan>
+    <tspan x="260" y="62" fill="#cc8800">L</tspan>
+    <tspan x="284" y="62" fill="#dd4400">E</tspan>
+  </text>
+
+  <!-- Gradient underline -->
+  <rect x="98" y="68" width="220" height="2" rx="1" fill="url(#lineG)" opacity="0.7"/>
+
+  <!-- 3 dots -->
+  <circle cx="190" cy="78" r="2.5" fill="#7c4dff"/>
+  <circle cx="199" cy="78" r="2.5" fill="#ff6b9d"/>
+  <circle cx="208" cy="78" r="2.5" fill="#ff9d4d"/>
+
+  <!-- Tagline -->
+  <text x="98" y="89" font-family="Arial,sans-serif" font-size="10.5" font-weight="400" letter-spacing="0.8" fill="#8888aa">AI Solutions | Software Development | Automation</text>
+</svg>
